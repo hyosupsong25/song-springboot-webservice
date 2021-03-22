@@ -2,6 +2,7 @@ package com.song.service.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 /**
  * Application 앞으로 만들 클래스의 메인 클래스
@@ -15,7 +16,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * 스프링 부트는 언제 어디서나 같은 환경에서 스프링 부트를 배포하기 위해 내장 WAS를 사용하는 것을 권장
  *
+ * @EnableJpaAuditing
+ * JPA Auditing 어노테이션 활성화
  * */
+@EnableJpaAuditing
 @SpringBootApplication
 public class Application {
     public static void main(String[] args) {
